@@ -5,7 +5,7 @@ description = "Windows desktop presets by Tracht Digital Solutions"
 authors = ["Tracht Digital Solutions"]
 edition = "2021"
 license-file = "../LICENSE"
-repository = "https://github.com/Tracht-Digital-Solutions/WorkSets"
+repository = "https://github.com/Tracht-Digital-Labs/WorkSets"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 

@@ -1,8 +1,8 @@
 [package]
 name = "worksets"
 version = "0.1.0-alpha.1"
-description = "Windows desktop presets by Tracht Digital Solutions"
-authors = ["Tracht Digital Solutions"]
+description = "Windows desktop presets by Tracht Digital Labs"
+authors = ["Tracht Digital Labs"]
 edition = "2021"
 license-file = "../LICENSE"
 repository = "https://github.com/Tracht-Digital-Labs/WorkSets"

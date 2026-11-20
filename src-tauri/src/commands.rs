@@ -1366,16 +1366,15 @@ fn check_for_updates_blocking(runtime: &AppRuntime) -> UpdateInfo {
         download_url: None,
         error: None,
     };
-    let response = ureq::get(
-        "https://api.github.com/repos/Tracht-Digital-Labs/WorkSets/releases?per_page=10",
-    )
-    .timeout(Duration::from_secs(12))
-    .set("Accept", "application/vnd.github+json")
-    .set(
-        "User-Agent",
-        concat!("WorkSets/", env!("CARGO_PKG_VERSION")),
-    )
-    .call();
+    let response =
+        ureq::get("https://api.github.com/repos/Tracht-Digital-Labs/WorkSets/releases?per_page=10")
+            .timeout(Duration::from_secs(12))
+            .set("Accept", "application/vnd.github+json")
+            .set(
+                "User-Agent",
+                concat!("WorkSets/", env!("CARGO_PKG_VERSION")),
+            )
+            .call();
     match response {
         Ok(response) => match response.into_json::<Vec<GithubRelease>>() {
             Ok(releases) => {

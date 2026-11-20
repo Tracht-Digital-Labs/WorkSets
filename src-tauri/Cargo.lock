@@ -5538,7 +5538,7 @@ dependencies = [
  "url",
  "uuid",
  "windows 0.52.0",
- "windows 0.58.0",
+ "windows 0.62.2",
  "winreg 0.56.0",
  "winvd 0.0.17",
  "winvd 0.0.46",

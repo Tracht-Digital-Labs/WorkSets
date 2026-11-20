@@ -44,7 +44,7 @@ winreg = "0.56"
 winvd-win10 = { package = "winvd", version = "=0.0.17" }
 winvd-win11-22h2 = { package = "winvd", version = "=0.0.46" }
 winvd-win11-24h2 = { package = "winvd", version = "=0.0.49" }
-windows = { version = "0.58", features = [
+windows = { version = "0.62", features = [
   "Win32_Foundation",
   "Win32_Devices_Display",
   "Win32_Graphics_Dwm",

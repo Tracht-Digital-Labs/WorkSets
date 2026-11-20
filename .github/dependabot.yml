@@ -30,6 +30,12 @@ updates:
         update-types:
           - minor
           - patch
+    ignore:
+      # winvd (virtual desktops) is built against windows 0.58 and exposes its
+      # HWND type; a newer windows crate in the app no longer type-checks
+      # against it. Lift this once winvd moves to a newer windows release.
+      - dependency-name: windows
+        versions: [">=0.59"]
     labels:
       - dependencies
       - rust

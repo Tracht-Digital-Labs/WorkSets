@@ -1,0 +1,103 @@
+name: Bug report (English)
+description: Report a reproducible problem in WorkSets
+title: "[Bug]: "
+labels:
+  - bug
+  - lang:en
+  - needs-triage
+  - windows-compatibility
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping. Save open documents before reproducing a desktop issue. Remove user names, full paths, URLs, window titles, and other personal data.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched the existing issues.
+          required: true
+        - label: This issue contains no vulnerability or confidential data.
+          required: true
+        - label: I saved my work before reproducing the problem.
+          required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: WorkSets version
+      description: For example, 0.1.0-alpha.1
+      placeholder: 0.1.0-alpha.1
+    validations:
+      required: true
+
+  - type: dropdown
+    id: architecture
+    attributes:
+      label: Architecture
+      options:
+        - x64
+        - ARM64
+    validations:
+      required: true
+
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version and build
+      description: "`winver` shows a value such as Windows 11 25H2, build 26200.x."
+      placeholder: Windows 11 25H2, build 26200.1234
+    validations:
+      required: true
+
+  - type: input
+    id: monitors
+    attributes:
+      label: Monitor and DPI setup
+      placeholder: 3 monitors; 1920×1080 @100%, 2560×1440 @125%, 4K @150%
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Use generic application names and anonymized paths.
+      placeholder: |
+        1. Capture preset …
+        2. …
+        3. Apply the preset
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior and apply report
+      description: Redact sensitive values before pasting.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: regression
+    attributes:
+      label: Is this a regression?
+      options:
+        - Unknown
+        - Yes, an earlier version worked
+        - No, it happened on the first attempt
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Add screenshots only if they reveal no private window content.

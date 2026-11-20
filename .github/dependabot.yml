@@ -1,0 +1,64 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: "06:00"
+      timezone: Europe/Berlin
+    open-pull-requests-limit: 5
+    groups:
+      npm-minor-patch:
+        update-types:
+          - minor
+          - patch
+    labels:
+      - dependencies
+      - javascript
+
+  - package-ecosystem: cargo
+    directory: /src-tauri
+    schedule:
+      interval: weekly
+      day: monday
+      time: "06:15"
+      timezone: Europe/Berlin
+    open-pull-requests-limit: 5
+    groups:
+      cargo-minor-patch:
+        update-types:
+          - minor
+          - patch
+    labels:
+      - dependencies
+      - rust
+
+  - package-ecosystem: cargo
+    directory: /fixtures/windows-app
+    schedule:
+      interval: weekly
+      day: monday
+      time: "06:20"
+      timezone: Europe/Berlin
+    open-pull-requests-limit: 3
+    groups:
+      fixture-cargo-minor-patch:
+        update-types:
+          - minor
+          - patch
+    labels:
+      - dependencies
+      - rust
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: "06:30"
+      timezone: Europe/Berlin
+    open-pull-requests-limit: 5
+    labels:
+      - dependencies
+      - github-actions

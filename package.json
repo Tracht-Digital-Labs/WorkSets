@@ -5,22 +5,39 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "npm run typecheck && vite build",
+    "lint": "biome lint src vite.config.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest",
+    "test:coverage": "vitest run --coverage",
     "preview": "vite preview",
     "tauri": "tauri"
   },
   "dependencies": {
+    "@fluentui/react-components": "^9.74.6",
+    "@fluentui/react-icons": "^2.0.337",
+    "@tauri-apps/api": "^2",
+    "@tauri-apps/plugin-opener": "^2",
+    "i18next": "^26.3.6",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "@tauri-apps/api": "^2",
-    "@tauri-apps/plugin-opener": "^2"
+    "react-i18next": "^15.7.4"
   },
   "devDependencies": {
+    "@biomejs/biome": "^2.5.8",
+    "@tauri-apps/cli": "^2",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@testing-library/user-event": "^14.6.4",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
     "@vitejs/plugin-react": "^4.6.0",
-    "typescript": "~5.8.3",
+    "@vitest/coverage-v8": "^3.2.7",
+    "axe-core": "^4.13.0",
+    "jsdom": "^26.1.0",
+    "typescript": "^7.0.2",
     "vite": "^7.0.4",
-    "@tauri-apps/cli": "^2"
+    "vitest": "^3.2.7",
+    "vitest-axe": "^0.1.0"
   }
 }

@@ -1,0 +1,63 @@
+name: Feature request (English)
+description: Suggest an improvement to WorkSets
+title: "[Feature]: "
+labels:
+  - enhancement
+  - lang:en
+  - needs-triage
+body:
+  - type: markdown
+    attributes:
+      value: Thank you for the suggestion. Start with the underlying problem so we can evaluate the smallest safe solution.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched for similar issues.
+          required: true
+        - label: The request does not require bypassing Windows privilege isolation.
+          required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem should this solve?
+      placeholder: When I …, I currently cannot …
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Desired behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives or current workaround
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Presets and capture
+        - Virtual desktops
+        - Windows and monitors
+        - Tray, hotkeys, or launch at sign-in
+        - Import, export, or storage
+        - Accessibility or translation
+        - Installation or updates
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: privacy
+    attributes:
+      label: Privacy or security impact
+      description: What additional local or transmitted data would be required?

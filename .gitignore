@@ -9,6 +9,9 @@ lerna-debug.log*
 
 node_modules
 dist
+coverage/
+.tools/
+fixtures/windows-app/target/
 dist-ssr
 *.local
 
@@ -22,3 +25,11 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# The icon generator emits mobile assets; WorkSets ships Windows bundles only.
+src-tauri/icons/android/
+src-tauri/icons/ios/
+
+# .NET build output
+[Bb]in/
+[Oo]bj/

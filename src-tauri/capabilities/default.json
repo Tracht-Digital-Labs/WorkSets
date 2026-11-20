@@ -5,6 +5,11 @@
   "windows": ["main"],
   "permissions": [
     "core:default",
-    "opener:default"
+    {
+      "identifier": "opener:allow-open-url",
+      "allow": [{ "url": "https://github.com/Tracht-Digital-Labs/WorkSets/**" }]
+    },
+    "autostart:default",
+    "global-shortcut:default"
   ]
 }

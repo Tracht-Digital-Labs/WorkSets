@@ -1,0 +1,103 @@
+name: Fehlerbericht (Deutsch)
+description: Einen reproduzierbaren Fehler in WorkSets melden
+title: "[Fehler]: "
+labels:
+  - bug
+  - lang:de
+  - needs-triage
+  - windows-compatibility
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Danke für deine Hilfe. Speichere offene Dokumente, bevor du einen Desktopfehler erneut testest. Bitte entferne Benutzernamen, vollständige Pfade, URLs, Fenstertitel und andere persönliche Daten.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Vorprüfung
+      options:
+        - label: Ich habe nach bestehenden Issues gesucht.
+          required: true
+        - label: Dieses Issue enthält keine Sicherheitslücke oder vertraulichen Daten.
+          required: true
+        - label: Ich habe meine Arbeit gespeichert, bevor ich den Fehler reproduziert habe.
+          required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: WorkSets-Version
+      description: Zum Beispiel 0.1.0-alpha.1
+      placeholder: 0.1.0-alpha.1
+    validations:
+      required: true
+
+  - type: dropdown
+    id: architecture
+    attributes:
+      label: Architektur
+      options:
+        - x64
+        - ARM64
+    validations:
+      required: true
+
+  - type: input
+    id: windows
+    attributes:
+      label: Windows-Version und Build
+      description: "`winver` zeigt zum Beispiel Windows 11 25H2, Build 26200.x."
+      placeholder: Windows 11 25H2, Build 26200.1234
+    validations:
+      required: true
+
+  - type: input
+    id: monitors
+    attributes:
+      label: Monitor- und DPI-Setup
+      placeholder: 3 Monitore; 1920×1080 @100 %, 2560×1440 @125 %, 4K @150 %
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Schritte zum Reproduzieren
+      description: Nutze neutrale App-Namen und anonymisierte Pfade.
+      placeholder: |
+        1. Preset … erfassen
+        2. …
+        3. Preset anwenden
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Erwartetes Verhalten
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Tatsächliches Verhalten und Apply-Bericht
+      description: Bitte sensible Werte vor dem Einfügen entfernen.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: regression
+    attributes:
+      label: Ist das Problem neu?
+      options:
+        - Unbekannt
+        - Ja, eine frühere Version funktionierte
+        - Nein, es trat schon beim ersten Versuch auf
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Zusätzlicher Kontext
+      description: Screenshots nur, wenn sie keine privaten Fensterinhalte zeigen.

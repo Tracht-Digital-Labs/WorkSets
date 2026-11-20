@@ -1,0 +1,63 @@
+name: Funktionswunsch (Deutsch)
+description: Eine Verbesserung für WorkSets vorschlagen
+title: "[Wunsch]: "
+labels:
+  - enhancement
+  - lang:de
+  - needs-triage
+body:
+  - type: markdown
+    attributes:
+      value: Danke für deinen Vorschlag. Beschreibe zuerst das Problem, damit wir die kleinste sichere Lösung beurteilen können.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Vorprüfung
+      options:
+        - label: Ich habe nach ähnlichen Issues gesucht.
+          required: true
+        - label: Der Vorschlag erfordert nicht, erhöhte Windows-Rechte zu umgehen.
+          required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Welches Problem soll gelöst werden?
+      placeholder: Wenn ich …, kann ich derzeit nicht …
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Gewünschtes Verhalten
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternativen oder aktueller Workaround
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Bereich
+      options:
+        - Presets und Erfassung
+        - Virtuelle Desktops
+        - Fenster und Monitore
+        - Tray, Hotkeys oder Autostart
+        - Import, Export oder Speicherung
+        - Barrierefreiheit oder Übersetzung
+        - Installation oder Updates
+        - Sonstiges
+    validations:
+      required: true
+
+  - type: textarea
+    id: privacy
+    attributes:
+      label: Datenschutz- oder Sicherheitsauswirkungen
+      description: Welche zusätzlichen lokalen oder übertragenen Daten wären erforderlich?

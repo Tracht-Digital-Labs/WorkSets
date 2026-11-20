@@ -40,7 +40,7 @@ url = "2.5"
 uuid = { version = "1.18", features = ["serde", "v4"] }
 
 [target.'cfg(windows)'.dependencies]
-winreg = "0.55"
+winreg = "0.56"
 winvd-win10 = { package = "winvd", version = "=0.0.17" }
 winvd-win11-22h2 = { package = "winvd", version = "=0.0.46" }
 winvd-win11-24h2 = { package = "winvd", version = "=0.0.49" }

@@ -5365,6 +5365,16 @@ dependencies = [
 ]
 
 [[package]]
+name = "winreg"
+version = "0.56.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "7d6f32a0ff4a9f6f01231eb2059cc85479330739333e0e58cadf03b6af2cca10"
+dependencies = [
+ "cfg-if 1.0.4",
+ "windows-sys 0.61.2",
+]
+
+[[package]]
 name = "winvd"
 version = "0.0.17"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -5431,7 +5441,7 @@ dependencies = [
  "uuid",
  "windows 0.52.0",
  "windows 0.58.0",
- "winreg 0.55.0",
+ "winreg 0.56.0",
  "winvd 0.0.17",
  "winvd 0.0.46",
  "winvd 0.0.49",

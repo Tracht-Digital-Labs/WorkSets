@@ -44,6 +44,6 @@ Presets lassen sich in der Anwendung löschen. Wird die Telemetrie-Einwilligung 
 
 Presets can be deleted in the app. Turning off telemetry consent automatically deletes the limited local diagnostics queue. To remove all local data, uninstall WorkSets and then delete `%LOCALAPPDATA%\Tracht Digital Solutions\WorkSets`. Exported presets and user-created backups must be removed separately.
 
-Datenschutz- oder Sicherheitsfragen bitte über ein privates [Security Advisory](https://github.com/Tracht-Digital-Solutions/WorkSets/security/advisories/new) stellen; keine sensiblen Daten in öffentliche Issues einfügen.
+Datenschutz- oder Sicherheitsfragen bitte über ein privates [Security Advisory](https://github.com/Tracht-Digital-Labs/WorkSets/security/advisories/new) stellen; keine sensiblen Daten in öffentliche Issues einfügen.
 
-For privacy or security questions, open a private [Security Advisory](https://github.com/Tracht-Digital-Solutions/WorkSets/security/advisories/new). Never include sensitive data in a public issue.
+For privacy or security questions, open a private [Security Advisory](https://github.com/Tracht-Digital-Labs/WorkSets/security/advisories/new). Never include sensitive data in a public issue.

@@ -1,6 +1,6 @@
 # Third-party notices
 
-WorkSets is distributed under the MIT License. It includes or builds on third-party open-source software whose own copyright notices and license terms remain in force.
+WorkSets is publicly viewable with all rights reserved (see [LICENSE](LICENSE)). It includes or builds on third-party open-source software whose own copyright notices and license terms remain in force.
 
 The following list identifies principal components; it is not a substitute for the complete dependency metadata in `package-lock.json`, `src-tauri/Cargo.lock`, and the test-only `fixtures/windows-app/Cargo.lock`.
 

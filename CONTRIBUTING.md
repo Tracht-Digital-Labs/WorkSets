@@ -65,4 +65,4 @@ Für sichere manuelle Fenster-, Schließ- und Single-Instance-Tests steht die is
 
 ## Lizenz / License
 
-Mit einem Beitrag erklärst du dich damit einverstanden, ihn unter der [MIT-Lizenz](LICENSE) des Projekts bereitzustellen. / By contributing, you agree to license your contribution under the project's [MIT License](LICENSE).
+Für Beiträge gelten die Bedingungen in [LICENSE](LICENSE) (öffentlich einsehbar, alle Rechte vorbehalten); bitte vor einem Beitrag abstimmen. / Contributions are subject to the terms in [LICENSE](LICENSE) (publicly viewable, all rights reserved); please coordinate before contributing.

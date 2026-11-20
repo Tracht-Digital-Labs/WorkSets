@@ -1,8 +1,8 @@
 blank_issues_enabled: false
 contact_links:
   - name: Sicherheitslücke / Security vulnerability
-    url: https://github.com/Tracht-Digital-Solutions/WorkSets/security/advisories/new
+    url: https://github.com/Tracht-Digital-Labs/WorkSets/security/advisories/new
     about: Bitte vertraulich melden – nicht als öffentliches Issue. / Please report privately, not in a public issue.
   - name: Dokumentation / Documentation
-    url: https://github.com/Tracht-Digital-Solutions/WorkSets#readme
+    url: https://github.com/Tracht-Digital-Labs/WorkSets#readme
     about: Installation, Kompatibilität und Datenschutz / Installation, compatibility, and privacy

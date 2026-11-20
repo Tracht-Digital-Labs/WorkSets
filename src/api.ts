@@ -743,7 +743,7 @@ export const worksetsApi = {
         available: true,
         currentVersion: "0.1.0-alpha.1",
         latestVersion: "0.1.0-alpha.2",
-        releaseUrl: "https://github.com/Tracht-Digital-Solutions/WorkSets/releases",
+        releaseUrl: "https://github.com/Tracht-Digital-Labs/WorkSets/releases",
         checkedAt: isoNow(),
         prerelease: true,
       };

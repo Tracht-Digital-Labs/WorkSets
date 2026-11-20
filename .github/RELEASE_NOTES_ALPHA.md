@@ -2,9 +2,9 @@
 
 > **Nicht für ungespeicherte produktive Arbeit empfohlen. / Not recommended for unsaved production work.**
 
-WorkSets by Tracht Digital Solutions erfasst und restauriert Windows-Arbeitsbereiche mit virtuellen Desktops, Programmfenstern und Multi-Monitor-Platzierung. Diese Alpha ist für frühe Tests und Feedback gedacht.
+WorkSets by Tracht Digital Labs erfasst und restauriert Windows-Arbeitsbereiche mit virtuellen Desktops, Programmfenstern und Multi-Monitor-Platzierung. Diese Alpha ist für frühe Tests und Feedback gedacht.
 
-WorkSets by Tracht Digital Solutions captures and restores Windows workspaces with virtual desktops, application windows, and multi-monitor placement. This alpha is intended for early testing and feedback.
+WorkSets by Tracht Digital Labs captures and restores Windows workspaces with virtual desktops, application windows, and multi-monitor placement. This alpha is intended for early testing and feedback.
 
 ## Downloads
 
@@ -21,7 +21,7 @@ Both installers are per-user NSIS packages and bootstrap Microsoft WebView2 when
 - Vergleiche SHA-256 mit `SHA256SUMS.txt` oder prüfe die GitHub-Attestierung:
 
   ```powershell
-  gh attestation verify .\WorkSets_0.1.0-alpha.1_windows_x64_setup.exe --repo Tracht-Digital-Solutions/WorkSets
+  gh attestation verify .\WorkSets_0.1.0-alpha.1_windows_x64_setup.exe --repo Tracht-Digital-Labs/WorkSets
   ```
 
 ---
@@ -40,7 +40,7 @@ Both installers are per-user NSIS packages and bootstrap Microsoft WebView2 when
 Microsoft ended standard support for Windows 10 22H2 in October 2025. WorkSets' experimental compatibility does not extend Microsoft's OS support; use an eligible ESU configuration or migrate to a supported Windows release.
 - Unsupported: x86, MSI, portable installs, and complete restoration of browser/document sessions.
 
-Read [COMPATIBILITY.md](https://github.com/Tracht-Digital-Solutions/WorkSets/blob/main/COMPATIBILITY.md) before testing. Save documents before applying a preset and report problems through the bilingual issue forms.
+Read [COMPATIBILITY.md](https://github.com/Tracht-Digital-Labs/WorkSets/blob/main/COMPATIBILITY.md) before testing. Save documents before applying a preset and report problems through the bilingual issue forms.
 
 ## Veröffentlichungskontrolle / Publication gate
 

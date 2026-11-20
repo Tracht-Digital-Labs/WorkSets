@@ -44,7 +44,7 @@ export function WorkSetsWordmark({ compact = false }: WordmarkProps) {
       <WorkSetsMark size={compact ? 34 : 44} decorative />
       <span className="wordmark__copy">
         <strong>WorkSets</strong>
-        {!compact && <span>by Tracht Digital Solutions</span>}
+        {!compact && <span>by Tracht Digital Labs</span>}
       </span>
     </div>
   );

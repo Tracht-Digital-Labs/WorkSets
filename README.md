@@ -1,10 +1,10 @@
 # WorkSets
 
-**Windows-Arbeitsbereiche als Presets – by Tracht Digital Solutions**
+**Windows-Arbeitsbereiche als Presets – by Tracht Digital Labs**
 
-[![CI](https://github.com/Tracht-Digital-Solutions/WorkSets/actions/workflows/ci.yml/badge.svg)](https://github.com/Tracht-Digital-Solutions/WorkSets/actions/workflows/ci.yml)
-[![Release](https://img.shields.io/github/v/release/Tracht-Digital-Solutions/WorkSets?include_prereleases&label=alpha)](https://github.com/Tracht-Digital-Solutions/WorkSets/releases)
-[![License: MIT](https://img.shields.io/badge/License-MIT-292522.svg)](LICENSE)
+[![CI](https://github.com/Tracht-Digital-Labs/WorkSets/actions/workflows/ci.yml/badge.svg)](https://github.com/Tracht-Digital-Labs/WorkSets/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/Tracht-Digital-Labs/WorkSets?include_prereleases&label=alpha)](https://github.com/Tracht-Digital-Labs/WorkSets/releases)
+[![License: all rights reserved](https://img.shields.io/badge/License-all%20rights%20reserved-292522.svg)](LICENSE)
 
 <img src="public/worksets-mark.svg" alt="WorkSets Logo: drei überlappende Arbeitsflächen" width="112">
 
@@ -49,9 +49,9 @@ Andere Builds führen zunächst nur einen sicheren Lesetest aus. Scheitert er, d
 
 ## Installation
 
-1. Öffne den neuesten [GitHub-Prerelease](https://github.com/Tracht-Digital-Solutions/WorkSets/releases).
+1. Öffne den neuesten [GitHub-Prerelease](https://github.com/Tracht-Digital-Labs/WorkSets/releases).
 2. Lade den Installer für `x64` oder `arm64` herunter.
-3. Vergleiche optional dessen SHA-256-Wert mit `SHA256SUMS.txt` und prüfe die Provenienz mit `gh attestation verify <datei> --repo Tracht-Digital-Solutions/WorkSets`.
+3. Vergleiche optional dessen SHA-256-Wert mit `SHA256SUMS.txt` und prüfe die Provenienz mit `gh attestation verify <datei> --repo Tracht-Digital-Labs/WorkSets`.
 4. Starte den Installer für den aktuellen Benutzer.
 
 Die Alpha ist absichtlich **nicht Authenticode-signiert**. Microsoft Defender SmartScreen kann deshalb „Windows hat den PC geschützt“ anzeigen. Installiere ausschließlich Assets aus dem offiziellen Repository und prüfe Prüfsumme bzw. Attestierung. Eine solche Warnung ist kein Beleg für Schadsoftware, aber ein Hinweis darauf, dass Windows dem Herausgeber noch nicht vertraut.
@@ -93,13 +93,13 @@ Die deterministische [Windows-Testanwendung](fixtures/windows-app/README.md) dec
 - Die Alpha bietet keine Cloud-Synchronisation, Benutzerkonten, x86-, MSI- oder Portable-Pakete.
 - Automatische Updates werden nicht installiert. WorkSets prüft höchstens einmal täglich auf öffentliche Prereleases und öffnet auf Wunsch die Downloadseite.
 
-Die Software steht unter der [MIT-Lizenz](LICENSE). Drittanbieter-Hinweise befinden sich in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+**Öffentlich einsehbar, alle Rechte vorbehalten.** Es besteht keine allgemeine Erlaubnis zum Kopieren, Verändern oder kommerziellen Weiterverwenden; die vollständigen Bedingungen stehen in [LICENSE](LICENSE). Früher wirksam eingeräumte Nutzungsrechte (ältere Fassungen enthielten eine MIT-Lizenzangabe) bleiben unberührt. Drittanbieter-Hinweise befinden sich in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
 ---
 
 ## English
 
-**Windows workspace presets – by Tracht Digital Solutions**
+**Windows workspace presets – by Tracht Digital Labs**
 
 > [!WARNING]
 > WorkSets `0.1.0-alpha.1` is a public alpha. Virtual desktop support relies on undocumented Windows interfaces. Save open documents before switching a preset. Windows 10 and ARM64 are experimental in this release.
@@ -138,9 +138,9 @@ Unknown builds receive a safe read-only probe first. If it fails, WorkSets disab
 
 ## Install
 
-1. Open the latest [GitHub prerelease](https://github.com/Tracht-Digital-Solutions/WorkSets/releases).
+1. Open the latest [GitHub prerelease](https://github.com/Tracht-Digital-Labs/WorkSets/releases).
 2. Download the `x64` or `arm64` installer.
-3. Optionally compare its SHA-256 digest with `SHA256SUMS.txt` and verify provenance with `gh attestation verify <file> --repo Tracht-Digital-Solutions/WorkSets`.
+3. Optionally compare its SHA-256 digest with `SHA256SUMS.txt` and verify provenance with `gh attestation verify <file> --repo Tracht-Digital-Labs/WorkSets`.
 4. Run the per-user installer.
 
 This alpha is deliberately **not Authenticode-signed**. Microsoft Defender SmartScreen may therefore display “Windows protected your PC.” Install only assets from the official repository and verify the checksum or attestation. The warning is not evidence of malware, but it does mean Windows does not yet trust the publisher identity.
@@ -167,4 +167,4 @@ The deterministic [Windows fixture app](fixtures/windows-app/README.md) covers d
 - The alpha does not include cloud sync, user accounts, x86, MSI, or portable packages.
 - Updates are never installed automatically. WorkSets checks public prereleases no more than once per day and only opens the download page after user action.
 
-Licensed under [MIT](LICENSE). Third-party notices are in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+**Publicly viewable, all rights reserved.** Public access grants no general permission to copy, modify or commercially reuse the code; see [LICENSE](LICENSE) for the complete terms. Rights granted earlier (older versions carried an MIT notice) remain unaffected. Third-party notices are in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).

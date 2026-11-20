@@ -1367,7 +1367,7 @@ fn check_for_updates_blocking(runtime: &AppRuntime) -> UpdateInfo {
         error: None,
     };
     let response = ureq::get(
-        "https://api.github.com/repos/Tracht-Digital-Solutions/WorkSets/releases?per_page=10",
+        "https://api.github.com/repos/Tracht-Digital-Labs/WorkSets/releases?per_page=10",
     )
     .timeout(Duration::from_secs(12))
     .set("Accept", "application/vnd.github+json")

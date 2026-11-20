@@ -4,7 +4,7 @@ import { initReactI18next } from "react-i18next";
 const de = {
   translation: {
     app: {
-      byline: "by Tracht Digital Solutions",
+      byline: "by Tracht Digital Labs",
       alpha: "Alpha",
       busy: "Arbeitsplatz wird gewechselt",
       browserMode: "Demo-Modus",
@@ -421,7 +421,7 @@ const de = {
 const en = {
   translation: {
     app: {
-      byline: "by Tracht Digital Solutions",
+      byline: "by Tracht Digital Labs",
       alpha: "Alpha",
       busy: "Switching workspace",
       browserMode: "Demo mode",

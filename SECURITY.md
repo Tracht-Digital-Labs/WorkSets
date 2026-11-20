@@ -2,13 +2,13 @@
 
 ## Sicherheitslücken melden
 
-Bitte melde vermutete Sicherheitslücken **nicht in einem öffentlichen Issue**. Verwende stattdessen die Funktion „Report a vulnerability“ im Bereich [Security Advisories](https://github.com/Tracht-Digital-Solutions/WorkSets/security/advisories/new). Beschreibe betroffene Versionen, nachvollziehbare Schritte, mögliche Auswirkungen und – falls vorhanden – einen Vorschlag zur Behebung. Teile keine personenbezogenen Daten oder vertraulichen Dokumente.
+Bitte melde vermutete Sicherheitslücken **nicht in einem öffentlichen Issue**. Verwende stattdessen die Funktion „Report a vulnerability“ im Bereich [Security Advisories](https://github.com/Tracht-Digital-Labs/WorkSets/security/advisories/new). Beschreibe betroffene Versionen, nachvollziehbare Schritte, mögliche Auswirkungen und – falls vorhanden – einen Vorschlag zur Behebung. Teile keine personenbezogenen Daten oder vertraulichen Dokumente.
 
 Wir bestätigen den Eingang nach Möglichkeit innerhalb von drei Werktagen, prüfen die Meldung, stimmen eine Veröffentlichung ab und nennen die meldende Person auf Wunsch. Bitte veröffentliche Details erst, nachdem ein Fix verfügbar ist oder eine gemeinsame Frist vereinbart wurde.
 
 ## Report a vulnerability
 
-Please do **not** disclose suspected vulnerabilities in a public issue. Use “Report a vulnerability” under [Security Advisories](https://github.com/Tracht-Digital-Solutions/WorkSets/security/advisories/new). Include affected versions, reproducible steps, possible impact, and a suggested remediation if available. Do not include personal data or confidential documents.
+Please do **not** disclose suspected vulnerabilities in a public issue. Use “Report a vulnerability” under [Security Advisories](https://github.com/Tracht-Digital-Labs/WorkSets/security/advisories/new). Include affected versions, reproducible steps, possible impact, and a suggested remediation if available. Do not include personal data or confidential documents.
 
 We aim to acknowledge reports within three business days, investigate them, coordinate disclosure, and credit the reporter if desired. Please wait to publish details until a fix is available or an agreed disclosure deadline has passed.
 

@@ -158,7 +158,7 @@ fn setup_tray(app: &mut tauri::App) -> tauri::Result<()> {
 
     let mut tray = TrayIconBuilder::with_id("worksets")
         .menu(&menu)
-        .tooltip("WorkSets by Tracht Digital Solutions")
+        .tooltip("WorkSets by Tracht Digital Labs")
         .show_menu_on_left_click(true)
         .on_menu_event(|app, event| {
             let id = event.id().as_ref();

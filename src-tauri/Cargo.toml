@@ -28,7 +28,7 @@ tauri-plugin-opener = "2"
 tauri-plugin-single-instance = "2.4"
 atomic-write-file = "0.3"
 chrono = { version = "0.4", features = ["serde"] }
-parking_lot = "0.12"
+parking_lot = "0.13"
 regex = "1.11"
 schemars = { version = "1", features = ["chrono04", "uuid1"] }
 semver = "1"
@@ -40,7 +40,7 @@ url = "2.5"
 uuid = { version = "1.18", features = ["serde", "v4"] }
 
 [target.'cfg(windows)'.dependencies]
-winreg = "0.55"
+winreg = "0.56"
 winvd-win10 = { package = "winvd", version = "=0.0.17" }
 winvd-win11-22h2 = { package = "winvd", version = "=0.0.46" }
 winvd-win11-24h2 = { package = "winvd", version = "=0.0.49" }

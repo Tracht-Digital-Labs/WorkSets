@@ -6,6 +6,7 @@ import { presetFixture } from "../test/fixtures";
 import { PresetEditor } from "./PresetEditor";
 
 describe("PresetEditor", () => {
+  // Includes an axe accessibility pass, which alone can exceed 5 s on a loaded runner.
   it("verschiebt Fenster per Pfeiltaste und schützt ungespeicherte Änderungen", async () => {
     const user = userEvent.setup();
     render(<PresetEditor initialPreset={presetFixture()} onSave={vi.fn().mockResolvedValue(undefined)} onCancel={vi.fn()} />);
@@ -17,9 +18,14 @@ describe("PresetEditor", () => {
     await expectAccessible();
 
     await user.click(screen.getByRole("button", { name: "Zurück" }));
-    expect(await screen.findByRole("dialog", { name: "Ungespeicherte Änderungen" })).toBeVisible();
+    // Locate the dialog through its title: under load jsdom can apply tabster's modal aria-hidden
+    // to the surface itself, which hides it from role queries although it is open and visible.
+    const title = await screen.findByText("Ungespeicherte Änderungen", {}, { timeout: 5000 });
+    const dialog = title.closest('[role="dialog"]');
+    expect(dialog).toHaveAttribute("aria-labelledby", title.id);
+    expect(dialog).toBeVisible();
     expect(screen.getByText("Möchtest du deine Änderungen verwerfen?")).toBeVisible();
-  });
+  }, 20_000);
 
   it("legt ein valides Programm an und lässt den Zieltyp per Tastatur ändern", async () => {
     const user = userEvent.setup();

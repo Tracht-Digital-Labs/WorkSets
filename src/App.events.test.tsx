@@ -39,11 +39,11 @@ async function renderNativeApp() {
   let shortcutHandler: ((shortcut: string) => void) | undefined;
   vi.spyOn(worksetsEvents, "onTrayApply").mockImplementation(async (handler) => {
     trayHandler = handler;
-    return vi.fn();
+    return vi.fn<() => void>();
   });
   vi.spyOn(worksetsEvents, "onGlobalShortcut").mockImplementation(async (handler) => {
     shortcutHandler = handler;
-    return vi.fn();
+    return vi.fn<() => void>();
   });
 
   render(<App />);
